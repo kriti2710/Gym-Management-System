@@ -1,0 +1,129 @@
+{%extends 'base.html' %}
+
+{% block title %}Services{% endblock title %}
+{% block body %} 
+
+<style>
+	.Services{
+    min-height: 100vh;
+    text-align: center;
+    font-size: 40px;
+    background-color: lavender;
+}
+
+.Services .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.Services .box-container .box{
+    height:23rem;
+    width:35rem;
+    margin:1rem;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+
+.Services .box-container .box img{
+    height:100%;
+    width:100%;
+    object-fit: cover;
+}
+
+.Services .box-container .box .info{
+    height:90%;
+    width:90%;
+    position: absolute;
+    top:50%; left:50%;
+    transform: translate(-50%, -50%) scale(0);
+    background:#fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+}
+
+.Services .box-container .box:hover .info{
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.Services .box-container .box .info h3{
+    font-size: 2.5rem;
+    color:#333;
+}
+
+.Services .box-container .box .info p{
+    font-size: 1.2rem;
+    color:#666;
+    padding:1rem 2rem;
+}
+
+</style>
+
+<section class="Services" id="Services">
+
+<h1 class="heading">Services</h1>
+
+<div class="box-container">
+
+    <div class="box">
+        <img src="https://source.unsplash.com/1600x600/?Treadmill" alt="">
+        <div class="info">
+            <h3>Treadmill</h3>
+            <p>Treadmill exercises are effective at increasing heart rate to a healthy level, so they are also very beneficial as a warm-up exercise. Elevating your heart rate to a healthy level will enable you to perform other exercises, such as weight training or other cardio exercises, with increased safety and success</p>
+            <a href="#"><button class="btn">more</button></a>
+        </div>
+    </div>
+
+    <div class="box">
+        <img src="https://source.unsplash.com/1600x600/?Yoga" alt="">
+        <div class="info">
+            <h3>Yoga</h3>
+            <p>Yoga's incorporation of meditation and breathing can help improve a person's mental well-being. “Regular yoga practice creates mental clarity and calmness; increases body awareness; relieves chronic stress patterns; relaxes the mind; centers attention; and sharpens concentration,” says Dr. Nevins.</p>
+            <a href="#"><button class="btn">more</button></a>
+        </div>
+    </div>
+
+    <div class="box">
+        <img src="https://source.unsplash.com/1600x600/?Trainer" alt="">
+        <div class="info">
+            <h3>Trainer</h3>
+            <p>A personal trainer can give you the tools and support that you need to reach a health and fitness goal. They can provide support, accountability, education, and a personalized plan of attack, so you may find working with one well worth the investment.</p>
+            <a href="#"><button class="btn">more</button></a>
+        </div>
+    </div>
+
+    <div class="box">
+        <img src="https://source.unsplash.com/1600x600/?Equipments" alt="">
+        <div class="info">
+            <h3>Equipments</h3>
+            <p>Better Control. When joints and muscles are overworked due to extreme exercise, the body tires easily. Using a proper gym machine will help avoid injury. By controlling the path of motion and matching the amount of force to the strength of muscles, the body gets a more efficient and safe workout.</p>
+            <a href="#"><button class="btn">more</button></a>
+        </div>
+    </div>
+
+    <div class="box">
+        <img src= "https://source.unsplash.com/1600x600/?Boxing" alt="">
+        <div class="info">
+            <h3>Boxing</h3>
+            <p>Boxing can help improve your heart health, body composition, and strength, as well as lower your blood pressure and aid weight loss. Most of all, boxing is a fun way to get some exercise and release stress in a safe and healthy way</p>
+            <a href="#"><button class="btn">more</button></a>
+        </div>
+    </div>
+
+    <div class="box">
+        <img src="https://source.unsplash.com/1600x600/?Weight lifting" alt="">
+        <div class="info">
+            <h3>Weight Lifting</h3>
+            <p>The benefits of lifting weights include building muscle, burning body fat, strengthening your bones and joints, reducing injury risk, and improving heart health. To lift weights safely, it's important to start slow, take rest days, and always use proper form.</p>
+            <a href="#"><button class="btn">more</button></a>
+        </div>
+    </div>
+
+</div>
+
+</section>
+{% endblock body %}
